@@ -17,8 +17,6 @@ import org.fmod.FMOD;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.reactivex.disposables.Disposable;
-
 public class VoiceChangeActivity extends AppCompatActivity implements VoiceAdapter.OnItemOnClick {
     List<VoiceBean> voiceBeanList = new ArrayList();
 
