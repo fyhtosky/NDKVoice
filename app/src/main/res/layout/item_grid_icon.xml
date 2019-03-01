@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/item"
-    android:background="@color/blank">
+    android:id="@+id/item">
     <ImageView
         android:id="@+id/img_icon"
         android:layout_width="45dp"
@@ -19,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:text="原声"
-        android:textColor="#FFFFFFFF"
+        android:textColor="@color/blank"
         android:textSize="13sp" />
 
     <ImageView

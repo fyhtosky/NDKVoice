@@ -1,8 +1,6 @@
 package com.example.fanyuanhua.ndkdemo.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +13,9 @@ import com.example.fanyuanhua.ndkdemo.R;
 import com.example.fanyuanhua.ndkdemo.bean.VoiceBean;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class VoiceAdapter extends RecyclerView.Adapter<VoiceAdapter.ViewHolder> {
     private Context mContext;

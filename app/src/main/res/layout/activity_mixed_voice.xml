@@ -3,19 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VoiceChangeActivity">
+    tools:context=".MixedVoiceActivity">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-    <Button
-        android:id="@+id/bt_mixed_voiced"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:text="实现混音"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
 
 </RelativeLayout>

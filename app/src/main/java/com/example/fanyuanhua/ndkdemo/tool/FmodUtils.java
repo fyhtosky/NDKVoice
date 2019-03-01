@@ -19,6 +19,9 @@ public class FmodUtils {
     public static final int MODE_CHORUS= 13; //合唱
     public static final int MODE_DISTORTION= 14; //破音
     public static final int MODE_MACHINE = 15;//机器人
+    public static final int MODE_BOY = 16;//男生
+    public static final int MODE_CUSTOM = 17;//自定义
+
 
     /**
      * 音效处理传2个值
@@ -27,6 +30,8 @@ public class FmodUtils {
      * @param type 音频文件类型
      */
     public native static void fix(String path, int type);
+
+    public native static  void playSoundWithParameter(String filepath, float speed, float pitch, float rate);
 
     static {
         System.loadLibrary("fmodL");

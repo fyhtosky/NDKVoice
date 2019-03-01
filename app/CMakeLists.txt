@@ -46,7 +46,62 @@ include_directories(src/main/cpp/inc)
 # you want to add. CMake verifies that the library exists before
 # completing its build.
 
-#添加自己写的 C/C++源文件
+#add_library(avcodec-57
+#        SHARED
+#        IMPORTED)
+#set_target_properties(avcodec-57
+#        PROPERTIES IMPORTED_LOCATION
+#        ${DIR}/armeabi/libavcodec-57.so)
+#
+#add_library(avdevice-57
+#        SHARED
+#        IMPORTED)
+#set_target_properties(avdevice-57
+#        PROPERTIES IMPORTED_LOCATION
+#        ${DIR}/armeabi/libavdevice-57.so)
+#
+#add_library(avfilter-6
+#        SHARED
+#        IMPORTED)
+#set_target_properties(avfilter-6
+#        PROPERTIES IMPORTED_LOCATION
+#        ${DIR}/armeabi/libavfilter-6.so)
+#
+#add_library(avformat-57
+#        SHARED
+#        IMPORTED)
+#set_target_properties(avformat-57
+#        PROPERTIES IMPORTED_LOCATION
+#        ${DIR}/armeabi/libavformat-57.so)
+#
+#add_library(avutil-55
+#        SHARED
+#        IMPORTED)
+#set_target_properties(avutil-55
+#        PROPERTIES IMPORTED_LOCATION
+#        ${DIR}/armeabi/libavutil-55.so)
+#
+#add_library(swresample-2
+#        SHARED
+#        IMPORTED)
+#set_target_properties(swresample-2
+#        PROPERTIES IMPORTED_LOCATION
+#        ${DIR}/armeabi/libswresample-2.so)
+#
+#add_library(swscale-4
+#        SHARED
+#        IMPORTED)
+#set_target_properties(swscale-4
+#        PROPERTIES IMPORTED_LOCATION
+#        ${DIR}/armeabi/libswscale-4.so)
+#
+#
+#
+#
+# #导入ffmpeg的路径
+# include_directories(libs/include)
+
+#添加本地 C/C++源文件
 add_library( # Sets the name of the library.
         native-lib
 
@@ -66,6 +121,17 @@ add_library(# Sets the name of the library.
         src/main/cpp/text-demo.cpp
 
         )
+
+#add_library(# Sets the name of the library.
+#        mixed-voice
+#
+#        # Sets the library as a shared library.
+#        SHARED
+#
+#        # Provides a relative path to your source file(s).
+#        src/main/cpp/mixed-voice.cpp
+#
+#        )
 
 
 
@@ -89,3 +155,15 @@ target_link_libraries( # Specifies the target library.
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )
+
+#target_link_libraries(  mixed-voice
+#        avcodec-57
+#        avdevice-57
+#        avfilter-6
+#        avformat-57
+#        avutil-55
+#        swresample-2
+#        swscale-4
+#        -landroid # Add this.
+#        ${log-lib} )
+
